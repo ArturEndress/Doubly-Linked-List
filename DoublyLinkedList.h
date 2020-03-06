@@ -29,7 +29,7 @@ public:
 
 
 	bool isEmpty();
-	Node* getNode(int type);
+	Node* getNode(int id);
 
 protected:
 	Node * begin, *end;
