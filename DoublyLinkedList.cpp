@@ -1,4 +1,5 @@
 #include "DoublyLinkedList.h"
+#include <cstddef>
 
 DoublyLinkedList::DoublyLinkedList()
 {
@@ -12,7 +13,7 @@ DoublyLinkedList::~DoublyLinkedList()
 }
 
 
-void DoublyLinkedList::add(int id, int qty = 1)
+void DoublyLinkedList::add(int id, int qty)
 {
 	// create a new node
 	Node *newNode = new Node;
@@ -79,7 +80,7 @@ void DoublyLinkedList::add(int id, int qty = 1)
 	}
 }
 
-void DoublyLinkedList::remove(int id, int qty = 1)
+void DoublyLinkedList::remove(int id, int qty)
 {
 	if (!isEmpty())
 	{
